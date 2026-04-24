@@ -14,14 +14,14 @@
     />
   </head>
   <body>
-    <section class="w-[400px] h-[350px] rounded-sm m-auto mt-[50px] bg-[#d9d9d9]">
+    <section class="w-[80%] h-[400px] md:w-[60%] lg:w-[40%] rounded-sm m-auto mt-[50px] bg-[#E5E4E2]">
       <div class="p-[20px]">
-        <input class="border p-4 rounded-sm h-[80px] w-[360px]" type="text" id="output" />
+        <input class="border border-gray-500  p-6 rounded-sm bg-[#E5E4E2] h-[80px] w-[100%]" type="text" id="output" />
       </div>
-      <div class="grid grid-cols-4 flex gap-1 px-[20px] pb-[20px]">
+      <div class="grid grid-cols-4 flex gap-4 px-[20px] pb-[20px]">
         <button class="bg-white rounded-sm h-[40px]" onclick="addinput('%')">%</button>
         <button class="bg-white rounded-sm" onclick="clearInput('CE')">CE</button>
-        <button class="bg-white rounded-sm" onclick="addinput('X')">
+        <button class="bg-white rounded-sm">
           <i class="fa-regular fa-circle-xmark"></i>
         </button>
         <button class="bg-white rounded-sm" onclick="addinput('*')">x</button>
@@ -40,7 +40,7 @@
         <button class="bg-white rounded-sm h-[40px]" onclick="addinput('00')">00</button>
         <button class="bg-white rounded-sm" onclick="addinput(0)">0</button>
         <button class=" bg-white rounded-sm" onclick="addinput('.')">.</button>
-        <button class="rounded-sm bg-[#7393B3]" onclick="equalstoo('=')">=</button>
+        <button class="rounded-sm bg-[#6F8FAF]" onclick="equalstoo('=')">=</button>
       </div>
     </section>
 
