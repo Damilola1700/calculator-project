@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculator</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <section class="w-[400px] h-[350px] rounded-sm m-auto mt-[50px] bg-[#d9d9d9]">
+      <div class="p-[20px]">
+        <input class="border p-4 rounded-sm h-[80px] w-[360px]" type="text" id="output" />
+      </div>
+      <div class="grid grid-cols-4 flex gap-1 px-[20px] pb-[20px]">
+        <button class="bg-white rounded-sm h-[40px]" onclick="addinput('%')">%</button>
+        <button class="bg-white rounded-sm" onclick="clearInput('CE')">CE</button>
+        <button class="bg-white rounded-sm" onclick="addinput('X')">
+          <i class="fa-regular fa-circle-xmark"></i>
+        </button>
+        <button class="bg-white rounded-sm" onclick="addinput('*')">x</button>
+        <button class="bg-white rounded-sm h-[40px]" onclick="addinput(7)">7</button>
+        <button class="bg-white rounded-sm" onclick="addinput(8)">8</button>
+        <button class="bg-white rounded-sm" onclick="addinput(9)">9</button>
+        <button class="bg-white rounded-sm" onclick="addinput('/')">/</button>
+        <button class="bg-white rounded-sm h-[40px]" onclick="addinput(4)">4</button>
+        <button class="bg-white rounded-sm" onclick="addinput(5)">5</button>
+        <button class="bg-white rounded-sm" onclick="addinput(6)">6</button>
+        <button class="bg-white rounded-sm" onclick="addinput('-')">-</button>
+        <button class="bg-white rounded-sm h-[40px]" onclick="addinput(1)">1</button>
+        <button class="bg-white rounded-sm" onclick="addinput(2)">2</button>
+        <button class="bg-white rounded-sm" onclick="addinput(3)">3</button>
+        <button class="bg-white rounded-sm" onclick="addinput('+')">+</button>
+        <button class="bg-white rounded-sm h-[40px]" onclick="addinput('00')">00</button>
+        <button class="bg-white rounded-sm" onclick="addinput(0)">0</button>
+        <button class=" bg-white rounded-sm" onclick="addinput('.')">.</button>
+        <button class="rounded-sm bg-[#7393B3]" onclick="equalstoo('=')">=</button>
+      </div>
+    </section>
+
+    <script src="cal.js"></script>
+  </body>
+</html>
